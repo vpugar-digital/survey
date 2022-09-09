@@ -1,4 +1,4 @@
-module gopkg.in/AlecAivazis/survey.v1
+module github.com/vpugar-digital/survey
 
 require (
 	github.com/AlecAivazis/survey/v2 v2.0.5 // indirect
@@ -12,4 +12,4 @@ require (
 
 go 1.13
 
-replace gopkg.in/AlecAivazis/survey.v1 => github.com/vpugar-digital/survey 1.8.8-with-escape-fix-2
+replace gopkg.in/AlecAivazis/survey.v1 => github.com/vpugar-digital/survey v1.8.8-with-escape-fix
