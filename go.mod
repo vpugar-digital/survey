@@ -12,4 +12,4 @@ require (
 
 go 1.13
 
-replace gopkg.in/AlecAivazis/survey.v1 => github.com/vpugar-digital/survey v1.8.8-with-escape-fix
+replace gopkg.in/AlecAivazis/survey.v1 => github.com/vpugar-digital/survey v1.8.8-with-escape-fix-3
