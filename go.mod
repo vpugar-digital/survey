@@ -11,3 +11,5 @@ require (
 )
 
 go 1.13
+
+replace gopkg.in/AlecAivazis/survey.v1 => github.com/vpugar-digital/survey 1.8.8-with-escape-fix-2

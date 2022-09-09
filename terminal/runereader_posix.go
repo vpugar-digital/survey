@@ -1,3 +1,4 @@
+//go:build !windows
 // +build !windows
 
 // The terminal mode manipulation code is derived heavily from:
@@ -76,8 +77,8 @@ func (rr *RuneReader) ReadRune() (rune, int, error) {
 		if err != nil {
 			return r, size, err
 		}
-		if r != '[' {
-			return r, size, fmt.Errorf("Unexpected Escape Sequence: %q", []rune{'\033', r})
+		if r != '[' && r != 'O' {
+			return r, size, fmt.Errorf("Unexpected Escape Sequence (fixed): %q", []rune{'\033', r})
 		}
 		r, size, err = rr.state.reader.ReadRune()
 		if err != nil {
